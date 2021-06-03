@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&family=Raleway:wght@200;400;600;700&display=swap');
+
+
+* { margin: 0 ; padding: 0;  box-sizing: border-box;
+    /* border: 1px solid pink ; */
+} 
+:root { 
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.inner {
+    width: 1300px;
+    margin:  0 auto ;
+}
+
+body { 
+    min-width: 1080px;
+}
+
+a:link , a:visited {
+    text-decoration: none;
+}
+.closeBt { display: none;}
+
+
+/*------------*/
+
+
+header .utilContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    background: #1b1b1b;
+}
+header .utilContainer > .util {
+    position: relative;
+    padding: 0 40px;
+    color: #f9f9f98f;
+}
+header .utilContainer > .util:nth-child(1) {
+    background-color: #e51937;
+    color: #f9f9f9;
+}
+header .utilContainer > .util:nth-child(n+2)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 1px;
+    height: 20px;
+    background-color: #f9f9f98f;
+
+}
+header .top {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+}
+header .top .inner {
+    display: flex;
+    flex-direction: row;
+}
+header .logo {
+    margin: 0 70px 0 0 ;
+    width: 160px;
+    height: 80px;
+    background: url(../images/icon/SK-VIEW_logo.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+header .gnb {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+}
+header .gnb .depth1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+    /* height: 90px; */
+}
+header .gnb .depth1 > span {
+    position: relative;
+    font-size: 1.25rem;
+}
+header .gnb .depth1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;    
+    height: 4px;
+    background: #e51937;
+}
+header .gnb .depth1:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+header .gnb .gnbAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+    background: #fff;
+    box-shadow: 0px 30px 100px #f9f9f98f;
+}
+header .gnb:hover .gnbAll, header .gnbAll:hover {
+    height: 300px;
+    transition: height 1s ;
+    border-top: 2px solid #f9f9f9;
+}
+header .gnb .gnbAll .depth2 {
+    width: 150px;
+    text-align: center;
+    border-left: 1px solid #eeeeee;
+}
+header .gnb .gnbAll .depth2:hover {
+    background: #f9f9f9;
+}
+header .gnb .gnbAll .depth2:last-of-type {
+    margin: 0 90px 0 0;
+    border-right: 1px solid #eeeeee;
+}
+header .gnb .gnbAll .depth2 > li {
+    margin: 40px 0;
+    font-size: 1.15rem;
+    color: #303030;
+    cursor: pointer;   
+}
+header .gnb .gnbAll .depth2 > li:hover,
+header .gnb .depth1:hover {
+    color: #e51937;
+    transition: all .5s;
+}
+header .topUtil {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 70px;
+}
+header .topUtil > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header .topUtil > span:hover {
+    background: #e51937;
+    color: #fff;
+    transition: all .5s;
+}
+header .topUtil > span:nth-child(2):hover {
+    background: #f58026;
+} 
+
+.searchPopup {
+    display: none;
+}
+.searchPopup.on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #f9f9f9;
+}
+.searchPopup > .search {
+    display: flex;
+    align-items: center;
+}
+.searchPopup input {
+    margin: 0 20px 0 0 ;
+    padding: 0 20px;
+    width: 500px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #eeeeee;
+    font-size: 1.25rem;
+}
+.searchPopup span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e51937;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.menuBt {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.menuBt >span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+.menuBt >span:nth-child(2) {
+    top: 20px;
+}
+header > aside {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    right: -400px;
+}
+header > aside > .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 500px;
+    color: #fff;
+} 
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-align: center;
+}
+.tab.first {
+    height: 350px;
+    background: #e51937;
+}
+.tab.second {
+    margin: 0 0 0 20px;
+    width: 60px;
+    height: 150px;
+    background: #1b1b1b;
+}
+.tab > span {
+    width: 40px;
+    writing-mode: tb-rl;
+}
+.tab > .number {
+    writing-mode: unset;
+    margin: 15px 0 0 0 ;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #444;
+    opacity: .5;
+}
+.tabBox {
+    width: 400px;
+}
+.tabBox > section.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #e51937;
+    height: 110%;
+}
+.tabBox > section.plan > h2 {
+    margin: 0 0 20px 0;
+}
+.calendar-c {
+    width: 100%;
+}
+.calendar {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    background: #c51e37;
+}
+/*---------*/
+
