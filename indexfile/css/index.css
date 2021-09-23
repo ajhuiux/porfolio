@@ -134,6 +134,14 @@ section {
     background:url(../images/SK_VIEW_main.png);
     background-size: cover;
 }
+.workCon:nth-child(3) > .workPic {
+    background:url(../images/sen_main.png) 50% 50% ;
+    background-size: cover;
+}
+.workCon:nth-child(4) > .workPic {
+    background:url(../images/GW_main.png) 50% 50% ;
+    background-size: cover;
+}
 .work.w2 > .workPic {
     background:url(../images/porjectA.png);
     background-size: cover;
