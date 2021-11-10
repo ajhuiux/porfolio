@@ -1,0 +1,24 @@
+@charset "utf-8";
+body { min-width: 641px; }
+header { position: relative; }
+.inner {
+    width: 80%;
+    height: calc(100vh - 100px);
+    padding: 40px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+.text {
+    width: 100%;
+}
+.text.first h1::after {
+    top: unset;
+    transform: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #999;
+}
+.text.first, .text.second {
+    padding: 0;
+}

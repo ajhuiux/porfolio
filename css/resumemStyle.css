@@ -1,7 +1,5 @@
 @charset "utf-8";
-body {
-    min-width: 320px;
-}
+body { min-width: 320px; }
 header {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -20,9 +18,7 @@ header {
     width: 40px;
     height: 40px;
 }
-nav {
-    display: none;
-}
+nav { display: none; }
 nav.on {
     display: block;
     flex-direction: column;
@@ -32,9 +28,9 @@ nav.on {
     width: 100%;
     height: 100vh;
     padding: 150px 0;
-    backdrop-filter: blur(18.0px);
-    -webkit-backdrop-filter: blur(18.0px);
-    animation: fadein 0.5s;
+    backdrop-filter: blur( 18.0px );
+    -webkit-backdrop-filter: blur( 18.0px );
+    animation: fadein .5s;
     cursor: pointer;
 }
 nav > a {
@@ -46,26 +42,27 @@ nav > a:nth-child(4) {
     background: unset;
     border-radius: unset;
     padding: unset;
-}
-.closeBt {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
-}
-.scroll-item__inner {
+  }
+  .closeBt {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+  }
+  .scroll-item__inner {
     width: 90%;
     justify-content: unset;
     position: relative;
-}
-.mainTitle {
+  }
+  .mainTitle {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 20px;
-}
-/* --- */
+  }
+  /* --- */
 .inner {
+    /* padding-top: 100px; */
     width: 90%;
     height: 100vh;
     flex-direction: column;
@@ -76,30 +73,20 @@ nav > a:nth-child(4) {
     text-align: center;
     padding: unset;
 }
-.text.first,
-.text.second {
-    padding: unset;
-}
-.text.first h1::after {
-    display: none;
-}
-.text li,
-li.info {
-    margin-bottom: 10px;
-}
-.text h1 {
-    font-size: 2rem;
-}
-.text span,
-.text a {
+.text.first, .text.second { padding: unset; }
+.text.first h1::after { display: none; }
+.text li, li.info { margin-bottom: 10px; }
+.text h1 {font-size: 2rem;}
+.text span, .text a {
     font-size: 1.5rem;
     margin-right: 10px;
-}
-/* animation */
-@keyframes fadein {
+  }
+  /* animation */
+  @keyframes fadein {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
