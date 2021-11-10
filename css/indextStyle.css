@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+body {
+  min-width: 768px;
+}
+.scroll-item__inner {
+  width: 90%;
+  position: relative;
+}
+.mainTitle {
+  font-size: 4rem;
+}
+.text .englishTrans {
+  display: none;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+}
+.circleImg {
+  width: 100px;
+  width: 100px;
+}
+.text h1 {
+  transform: translateX(0);
+}
+.workCon {
+  width: 100%;
+  height: 60vh;
+  padding: 40px;
+  overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: #eee;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  opacity: .7;
+}
+.swiper-button-prev {
+  right: unset;
+  left: 0;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: unset;
+}
+.btBox {
+  flex-direction: column;
+}
+.moveBt:nth-child(2) {
+  margin: 20px 0 0 0;
+}
+.WordsBox {
+  display: none;
+}
+.contactBox {
+  transform: unset;
+}
+.contact a {
+  font-size: 1.75rem;
+}

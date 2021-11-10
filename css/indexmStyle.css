@@ -1,0 +1,212 @@
+@charset "utf-8";
+* {
+  border: 1px solid red;
+}
+body {
+  min-width: 320px;
+}
+header {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.menuBt {
+  display: block;
+  font-size: 2rem;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.menuBt.hide {
+  display: none;
+}
+.mainLogo {
+  width: 40px;
+  height: 40px;
+}
+nav {
+  display: none;
+}
+nav.on {
+  display: block;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0;
+  backdrop-filter: blur(18.0px);
+  -webkit-backdrop-filter: blur(18.0px);
+  animation: fadein 0.5s;
+  cursor: pointer;
+}
+nav > a {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+nav > a:nth-child(4) {
+  font-weight: unset;
+  color: unset;
+  background: unset;
+  border-radius: unset;
+  padding: unset;
+}
+.closeBt {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+}
+.scroll-item__inner {
+  width: 90%;
+  justify-content: unset;
+  position: relative;
+}
+.mainTitle {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+/* ------- */
+.sec01 i {
+  left: 47%;
+  bottom: 80px;
+  font-size: 3rem;
+}
+.sec02 .text {
+  width: 100%;
+  text-align: center;
+}
+.text h1 {
+  margin-bottom: 20px;
+  transform: unset;
+  font-size: 2rem;
+}
+.text p {
+  margin: 0;
+  color: #888;
+}
+.text .englishTrans {
+  display: none;
+}
+.moveBt {
+  margin-top: 50px;
+  width: 240px;
+  height: 55px;
+}
+.moveBt .btCircle {
+  width: 100%;
+  height: 100%;
+  background: #7f7aed;
+  border-radius: 50px;
+}
+.moveBt .button-text {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.moveBt .btCircle .icon.arrow {
+  left: 30px;
+}
+.copy {
+  display: none;
+}
+.circleBox {
+  margin-top: 30px;
+  height: 58vh;
+  flex-direction: row;
+  overflow: scroll;
+}
+.circle-line:nth-child(1) {
+  margin-bottom: unset;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 80px 0 0;
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.circleImg {
+  width: 100px;
+  height: 100px;
+}
+.circleText {
+  display: block;
+  position: absolute;
+  top: unset;
+  top: 180px;
+  left: 0;
+  width: 150%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.089);
+  border: 1px solid #fff;
+}
+.circleText > span {
+  font-size: 1.25rem;
+}
+.sec03 .scroll-item__inner {
+  height: auto;
+}
+.workCon {
+  padding: 0;
+  height: auto;
+}
+.workCon > ul {
+  align-items: flex-start;
+  height: auto;
+}
+.swiper-slide.work {
+  width: 100%;
+  flex-direction: column;
+  justify-content: unset;
+  padding: 20px;
+  transform: unset;
+  opacity: 1;
+}
+.workPic {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  margin-bottom: 20px;
+}
+.workText {
+  width: 100%;
+  text-align: center;
+}
+.workTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.number,
+.workCopy {
+  display: none;
+}
+.btBox {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.btBox .moveBt,
+.moveBt:nth-child(2) {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.WordsBox {
+  display: none;
+}
+.contactBox {
+  transform: unset;
+}
+.contact a {
+  font-size: 1.75rem;
+}
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

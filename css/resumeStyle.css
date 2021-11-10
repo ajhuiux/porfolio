@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', "Gothic A1", sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+/* ----- */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    width: 100%;
+    backdrop-filter: blur(15.0px);
+    -webkit-backdrop-filter: blur(15.0px);
+}
+.mainLogo {
+    width: 60px;
+    height: 60px;
+    background: url('/images/icon/A.png') 0 0;
+    background-size: cover;
+}
+.menuBt {
+    display: none;
+}
+.closeBt {
+    display: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in;
+}
+nav > a:hover {
+    color: #333699;
+}
+nav > a:nth-child(4) {
+    font-weight: 600;
+    color: #fff;
+    background: #e26e51;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+/* -- */
+.inner {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.text {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text h1 {
+    font-size: 3.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.text.first h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 2px;
+    background: #000;
+}
+.text span,
+.text a {
+    font-size: 1.25rem;
+    margin-right: 20px;
+    color: #888;
+    filter: grayscale(100%);
+}
+.text li {
+    margin-bottom: 10px;
+}
+li.info {
+    margin: 20px 0 60px;
+}
+.text.first {
+    padding-bottom: 100px;
+}
+.text.second {
+    padding-top: 400px;
+}
+h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+.text .name {
+    font-weight: 500;
+    color: #000;
+}
+.sideText {
+    position: absolute;
+    left: -220px;
+    bottom: 200px;
+    transform: rotate(-90deg);
+    font-size: 1.25rem;
+    color: #ececec;
+}
