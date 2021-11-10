@@ -31,7 +31,7 @@ header {
 .mainLogo{
   width: 60px;
   height: 60px;
-  background: url(/images/icon/A.png) 0 0;
+  background: url(../images/icon/A.png) 0 0;
   background-size: cover;
 }
 .menuBt {display: none;}
@@ -242,7 +242,7 @@ nav > a:nth-child(4) {
 .circleImg {
   width: 110px;
   height: 110px;
-  background: url(/images/icon/Photoshop.png) 50% 50% no-repeat;
+  background: url(../images/icon/Photoshop.png) 50% 50% no-repeat;
   background-size: cover;
   transition: all .5s ease;
 }
@@ -281,19 +281,19 @@ nav > a:nth-child(4) {
 .circle-line:nth-child(even) .circle:nth-child(2) { border-color: #6a90e7; }
 .circle-line:nth-child(even) .circle:nth-child(3) { border-color: #d1ae12; } 
 .circle-line:nth-child(odd) .circle:nth-child(2) .circleImg {
-  background: url(/images/icon/illustrator.png) 50% 50% no-repeat;
+  background: url(../images/icon/illustrator.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .circle-line:nth-child(even) .circle:nth-child(1) .circleImg {
-  background: url(/images/icon/html5.png) 50% 50% no-repeat;
+  background: url(../images/icon/html5.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .circle-line:nth-child(even) .circle:nth-child(2) .circleImg {
-  background: url(/images/icon/css3.png) 50% 50% no-repeat;
+  background: url(../images/icon/css3.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .circle-line:nth-child(even) .circle:nth-child(3) .circleImg {
-  background: url(/images/icon/js.png) 50% 50% no-repeat;
+  background: url(../images/icon/js.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -386,19 +386,19 @@ nav > a:nth-child(4) {
 }
 
 .w1 .workPic {
-  background: url(/images/porjectA.png) 50% 50% no-repeat;
+  background: url(../images/porjectA.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .w2 .workPic {
-  background: url(/images/projectB.png) 50% 50% no-repeat;
+  background: url(../images/projectB.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .w3 .workPic {
-  background: url(/images/projectC.png) 50% 50% no-repeat;
+  background: url(../images/projectC.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .w4 .workPic {
-  background: url(/images/projectD.png) 50% 50% no-repeat;
+  background: url(../images/projectD.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -418,7 +418,6 @@ nav > a:nth-child(4) {
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
   -webkit-font-smoothing: antialiased;
-  -webkit-font-kerning: normal;
   -webkit-text-size-adjust: 100%;
 }
 .Words-line {
