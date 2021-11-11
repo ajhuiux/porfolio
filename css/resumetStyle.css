@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body { min-width: 641px; }
 header { position: relative; }
 .inner {
