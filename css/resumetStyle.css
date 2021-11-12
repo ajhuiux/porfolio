@@ -4,7 +4,6 @@ body { min-width: 641px; }
 header { position: relative; }
 .inner {
     width: 80%;
-    height: calc(100vh - 100px);
     padding: 40px 0;
     flex-direction: column;
     justify-content: center;

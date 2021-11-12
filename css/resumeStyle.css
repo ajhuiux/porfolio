@@ -22,14 +22,8 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
     padding: 20px;
     width: 100%;
-    backdrop-filter: blur(15.0px);
-    -webkit-backdrop-filter: blur(15.0px);
 }
 .mainLogo {
     width: 60px;
@@ -71,7 +65,7 @@ nav > a:nth-child(4) {
 /* -- */
 .inner {
     width: 1200px;
-    height: 100vh;
+    height: calc(100vh - 100px);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
