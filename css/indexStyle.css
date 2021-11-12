@@ -102,12 +102,23 @@ nav > a:nth-child(4) {
   font-size: 6rem;
   font-weight: 800;
 }
-.sec01 i {
+.scrollArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+}
+.scrollArrow span {
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 10px;
+}
+.scrollArrow i {
   font-size: 4rem;
+  font-weight: 400;
   animation: arrowAnimation 2s infinite ease-out;
 }
 
