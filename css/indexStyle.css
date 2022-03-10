@@ -372,6 +372,21 @@ nav > a:nth-child(4) {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+.cross-browsing {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+}
+.cross-browsingTitle {
+  margin: 10px 0 5px 0;
+}
+.browserImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
 .btBox {
   display: flex;
   margin: 40px 0 0 0;
