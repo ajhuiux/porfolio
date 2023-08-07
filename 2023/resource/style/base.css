@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+@font-face {
+  font-family: 'TangoSnas';
+  src: url(./../font/TangoSans.ttf);
+}
+@font-face {
+  font-family: 'TangoSans-Bold';
+  src: url(./../font/TangoSans_Bold.ttf);
+}
+
+:root {
+  font-size: 16px;
+  font-family: 'TangoSnas';
+  cursor: default;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
