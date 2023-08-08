@@ -179,7 +179,6 @@ section {
   }
 }
 .contact {
-  height: calc(100vh - 148px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -393,7 +392,6 @@ section {
     }
   }
   .contact {
-    height: calc(100vh - 10.14vw);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -526,10 +524,6 @@ section {
         height: 0.39vw;
       }
     }
-  }
-
-  .contact {
-    height: calc(100vh - 15.5vw);
   }
 
   .contactWrap {
