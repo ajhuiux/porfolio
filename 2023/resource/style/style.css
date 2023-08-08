@@ -384,7 +384,7 @@ section {
     margin-left: 5.21vw;
   }
   header a::after {
-    height: 0.39vw;
+    display: none;
   }
   section {
     padding: 5.21vw;
