@@ -156,7 +156,6 @@ section {
 }
 
 .contact {
-  height: calc(100vh - 146px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -338,7 +337,6 @@ section {
     transition: all ease 0.3s;
   }
   .contact {
-    height: calc(100vh - 10.14vw);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -424,9 +422,6 @@ section {
   .moreBtn::after {
     height: 0.39vw;
   }
-  .work, .contact {
-    border-top: 0.39vw solid #000;
-  }
   .title {
     font-size: 6.25vw;
   }
@@ -446,9 +441,6 @@ section {
   .project li .projectTItle::after {
     height: 0.39vw;
   }
-  .contact {
-    height: calc(100vh - 15.5vw);
-  }
   .contactWrap {
     max-width: 100%;
     margin: 5.21vw 0;
@@ -461,6 +453,4 @@ section {
   .contactWrap a::after {
     height: 0.39vw;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
