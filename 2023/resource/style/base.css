@@ -33,6 +33,13 @@ a {
   cursor: pointer;
 }
 
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;;
+}
+
 img {
   width: 100%;
   display: block;
